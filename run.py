@@ -159,6 +159,8 @@ while True:
             if event.axis == 2:
                 aux_angle = event.value * 0.1 if event.value <= -tol or event.value >= tol else 0
 
+        # if event.type == pygame.KEYDOWN
+
     player_angle += aux_angle
     initial_angle += aux_angle
     # Rotate control's vector to use in player's position
